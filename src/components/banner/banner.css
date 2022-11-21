@@ -1,0 +1,62 @@
+.banner{
+    background-image: url(https://tinyurl.com/2qcxb4vz);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    position: relative;
+    z-index: -1;
+    top: 6rem;
+}
+
+.bannerCard{
+    position: relative;
+    top: 87px;
+    left: 94px;
+    background: white;
+    width: 390px;
+    height: 320px;
+    padding: 30px;
+    border-radius: 8px;
+    z-index: 0;
+}
+
+.bannerTitle{
+    font-size: 30px;
+    font-weight: 400;
+    padding: 12px 0 53px 0;
+}
+
+.bannerButton{
+    width: 330px;
+    height: 46px;
+    background: #017580;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 9px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.headerLinkHelp{
+    color: #017580;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.bannerSvg{
+    background-image: url(https://tinyurl.com/2lz7tn6u);
+    height: 20rem;
+    background-repeat: no-repeat;
+    margin: 113px 0 0 48rem;
+}
+
+@media screen and (max-width: 768px) {
+    .bannerCard{
+        left: 25px;
+    }
+    
+    .bannerSvg{
+        margin: 131px 0 0 21rem;
+    }
+}

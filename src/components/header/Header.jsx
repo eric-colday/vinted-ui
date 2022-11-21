@@ -12,8 +12,8 @@ const Header = () => {
     const [openBurger, setOpenBurger] = useState(false);
 
   return (
-    <header>
-        <div className="header">
+    <header className="header">
+        <div className="headerWrapper">
             <div className="headerPicture">
                 <img 
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Vinted_logo.png/1024px-Vinted_logo.png" 
