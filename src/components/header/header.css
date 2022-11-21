@@ -1,0 +1,278 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 86%;
+    margin: auto;
+    padding: 8px 0;
+}
+.headerLogo{
+    height: 28px
+}
+
+.headerIconBurger{
+    display: none;
+}
+
+.headerContainer{
+    display: flex;
+    align-items: center;
+    
+}
+
+.headerBurger{
+    display: flex;
+}
+.headerItems{
+    display: flex;
+    flex-direction: column;
+    margin: 0 45px 0 45px;
+    border-radius: 4px 0 0 4px ;
+    background: #f2f2f2;
+    padding: 3px 18px 7px 10px;
+    color: #757575;
+    cursor: pointer;
+}
+
+.headerItem{
+    font-size: 14px;
+}
+
+.headerIconSelect{
+    font-size: 20px;
+    color: #747373;
+}
+
+.headerListItems{
+    position: absolute;
+    top: 50px;
+    right: 1087px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    background: white;
+}
+
+.headerSelectedItem{
+    width: 135px;
+    padding: 10px 12px 10px 12px;
+    
+    cursor: pointer;
+}
+
+.headerSelectedItem:hover {
+    background: #f2f2f291;
+}
+
+.headerSearchItems {
+    display: flex;
+    align-items: center;
+    margin-left: -51px;
+    border-radius: 0 4px 4px 0;
+    border-left: 1px solid #daddde;
+    background: #f2f2f2;
+    margin-right: 26px;
+    padding: 10px 3rem 8px 10px;
+    color: #757575;
+}
+
+.headerIconSearch{
+    font-size: 14px;
+    color: #a5a4a4;
+}
+
+#search::placeholder {
+    color: #757575;
+    font-size: 16px;
+    letter-spacing: 1px
+}
+
+.headerTextSearch{
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    width: 32rem;
+}
+
+.headerButtons{
+    display: flex;
+    align-items: center;
+}
+
+.headerAuthButton{
+    border: 1px solid #017580;
+    color: #017580;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 165px;
+    height: 23px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headerButtonSell{
+    border: 1px solid #017580;
+    background: #017580;
+    color: #ffff;
+    border-radius: 3px;
+    font-size: 12px;
+    width: 122px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.headerLanguages{
+    display: flex;
+    align-items: center;
+}
+
+.headerLanguagesHelp{
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 14px;
+    margin: 0 12px 0 6px;
+    color: #7b7b7b;
+    cursor: pointer;
+}
+
+.headerListLanguages{
+    cursor: pointer;
+}
+
+.headerSelectedLanguages{
+    position: absolute;
+    top: 60px;
+    right: 123px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px
+}
+
+.headerSelectedLanguage{
+    width: 190px;
+    height: 32px;
+    padding: 10px 12px 10px 12px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.headerSelectedLanguage:hover {
+    background: #f2f2f2;
+}
+
+.headerSeparator{
+    border-top: 1px solid #f2f2f2;
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .headerPicture{
+        display: flex;
+        align-items: center;
+        padding: 4px 26px 16px 26px;
+        border-bottom: 1px solid #f2f2f2;
+    }
+
+    .headerSeparatorIcon{
+        margin-left: 38rem;
+    }
+
+    .headerButtonBurger:hover{
+        background: #e8f0f2;
+        border-radius: 4px;
+    }
+
+    .headerIconBurger {
+        display: flex;
+        padding: 8px 14px 8px 14px;
+        font-size: 22px;
+        color: grey;
+    }
+
+    .headerIconClose{
+        display: flex;
+        padding: 6px 14px 6px 14px;
+        font-size: 22px;
+        color: grey;
+    }
+
+    .headerMenuScrolling{
+        left: 0;
+        top: 69px;
+        position: absolute;
+        background: white;
+        width: 765px;
+        height: 73rem;
+    }
+
+    .headerBurger{
+        display: none;
+    }
+
+    .headerButtons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin-top: 14px;
+    }
+
+    .headerButtonSell{
+        font-size: 15px;
+        width: 46rem;
+        height: 42px;
+    }
+
+    .headerAuthButton{
+        font-size: 15px;
+        width: 46rem;
+        height: 42px;
+        margin-right: 0px;
+    }
+
+    .headerGuideButton{
+        border: 0px solid #017580;
+        color: #017580;
+        border-radius: 3px;
+        font-size: 15px;
+        width: 46rem;
+        height: 42px;
+        margin-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .headerContainer{
+        padding-top: 8px;
+    }
+
+    .headerItems{
+        margin: 0 59px 0 31px;
+    }
+
+    .headerSearchItems{
+        margin-left: -59px;
+    }
+
+    .headerListItems{
+        top: 122px;
+        right: 592px;
+    }
+}

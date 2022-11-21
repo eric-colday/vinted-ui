@@ -1,0 +1,58 @@
+.navBar{
+    display: flex;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 2px 0 1px 6rem;
+    height: 45px;
+    align-items: center;
+    font-size: 13px;
+}
+
+.navBarButtons{
+    display: flex;
+    width: 89px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navBarButtons:hover{
+    background: #f2f2f291;
+}
+
+.navBarButtonsTwo{
+    display: flex;
+    width: 130px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navBarButtonsTwo:hover{
+    background: #f2f2f291;
+}
+
+.navBarButtonsThree{
+    display: flex;
+    width: 138px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navBarButtonsThree:hover{
+    background: #f2f2f291;
+}
+
+.navBarLink{
+    color: #757575;
+}
+
+@media screen and (max-width: 768px) {
+    .navBar {
+        display: none;
+    }
+}
