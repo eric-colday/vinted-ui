@@ -1,12 +1,13 @@
 .banner{
+    padding-top: 6rem;
+}
+
+.bannerBackgroung{
     background-image: url(https://tinyurl.com/2qcxb4vz);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 480px;
-    position: relative;
-    z-index: -1;
-    top: 6rem;
 }
 
 .bannerCard{

@@ -5,20 +5,22 @@ import "./banner.css";
 const Banner = () => {
   return (
     <section className="banner">
-        <div className="bannerCard">
-            <h1 className="bannerTitle">Prêts à faire <br />
-            du tri dans vos <br />
-            placards ?</h1>
-            <Link to="/">
-                <button className="bannerButton">
-                    Vends maintenant
-                </button>
-            </Link>
-            <Link to="/">
-                <span className="headerLinkHelp">Découvrir comment ça marche</span>
-            </Link>
+        <div className="bannerBackgroung">
+            <div className="bannerCard">
+                <h1 className="bannerTitle">Prêts à faire <br />
+                du tri dans vos <br />
+                placards ?</h1>
+                <Link to="/a-propos">
+                    <button className="bannerButton">
+                        Vends maintenant
+                    </button>
+                </Link>
+                <Link to="/">
+                    <span className="headerLinkHelp">Découvrir comment ça marche</span>
+                </Link>
+            </div>
+            <div className="bannerSvg"></div>
         </div>
-        <div className="bannerSvg"></div>
     </section>
   )
 }
