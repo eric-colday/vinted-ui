@@ -51,11 +51,21 @@
     margin: 113px 0 0 48rem;
 }
 
+@media screen and (max-width: 1024px){
+    .bannerCard{
+        left: 16px;
+    }
+
+    .bannerSvg{
+        margin: 120px 0 0 27rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .bannerCard{
         left: 25px;
     }
-    
+
     .bannerSvg{
         margin: 131px 0 0 21rem;
     }

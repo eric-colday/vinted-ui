@@ -184,6 +184,51 @@
     border-top: 1px solid #f2f2f2;
 }
 
+@media screen and (max-width: 1024px) {
+    .headerWrapper{
+        width: 96%;
+    }
+
+    .headerItem {
+        font-size: 12px;
+    }
+
+    .headerListItems {
+        right: 750px;
+    }
+
+    #search::placeholder {
+        color: #757575;
+        font-size: 14px;
+        letter-spacing: 1px
+    }
+
+    .headerTextSearch {
+        width: 15rem;
+    }
+
+    .headerAuthButton {
+        font-size: 11px;
+    }
+
+    .headerButtonSell {
+        font-size: 11px;
+    }
+
+    .headerFrench{
+        font-size: 12px
+    }
+
+    .headerSelectedLanguages {
+        right: 87px;
+    }
+
+    .headerSelectedLanguage {
+        width: 195px;
+        height: 52px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .headerWrapper{
         width: 100%;
@@ -225,7 +270,7 @@
         top: 69px;
         position: absolute;
         background: white;
-        width: 765px;
+        width: 770px;
         height: 73rem;
     }
 
@@ -279,8 +324,44 @@
         margin-left: -59px;
     }
 
+    .headerTextSearch {
+        width: 33rem;
+    }
+
     .headerListItems{
-        top: 122px;
+        top: 116px;
         right: 592px;
     }
 }
+
+@media screen and (max-width: 425px){
+    .headerSeparatorIcon {
+        margin-left: 18rem;
+    }
+
+    .headerTextSearch {
+        width: 12rem;
+    }
+
+    .headerMenuScrolling {
+        width: 430px;
+    }
+
+    .headerButtonSell {
+        width: 25rem;
+    }
+
+    .headerAuthButton {
+        width: 25rem;
+    }
+
+    .headerGuideButton {
+        width: 25rem;
+    }
+
+    .headerListItems {
+        right: 255px;
+    }
+}
+
+

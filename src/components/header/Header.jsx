@@ -82,7 +82,7 @@ const Header = () => {
                         className="headerListLanguages"
                         onClick={() => setOpenLanguage(!openLanguage)}
                     >
-                        <span>FR<FaSortDown/> </span>
+                        <span className="headerFrench">FR<FaSortDown/> </span>
                     </div>
                     { openLanguage && 
                         <div className="headerSelectedLanguages">

@@ -51,6 +51,13 @@
     color: #757575;
 }
 
+@media screen and (max-width: 1024px){
+    .navBar {
+        padding: 2px 0 1px 17px;
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .navBar {
         display: none;
