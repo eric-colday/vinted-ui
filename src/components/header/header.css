@@ -364,4 +364,66 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+    .headerSeparatorIcon {
+        margin-left: 15rem;
+    }
+
+    .headerListItems {
+        top: 117px;
+        right: 206px;
+    }
+
+    .headerMenuScrolling {
+        width: 375px;
+    }
+
+    .headerTextSearch {
+        width: 9rem;
+    }
+
+    .headerButtonSell {
+        width: 22rem;
+    }
+
+    .headerAuthButton {
+        width: 22rem;
+    }
+
+    .headerGuideButton {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .headerListItems {
+        top: 117px;
+        right: 149px;
+    }
+    
+    .headerSeparatorIcon {
+        margin-left: 10rem;
+    }
+
+    .headerMenuScrolling {
+        width: 318px;
+    }
+
+    .headerTextSearch {
+        width: 5rem;
+    }
+
+    .headerButtonSell {
+        width: 19rem;
+    }
+
+    .headerAuthButton {
+        width: 19rem;
+    }
+
+    .headerGuideButton {
+        width: 19rem;
+    }
+}
+
 

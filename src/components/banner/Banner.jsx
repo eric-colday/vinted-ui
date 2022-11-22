@@ -10,6 +10,9 @@ const Banner = () => {
                 <h1 className="bannerTitle">Prêts à faire <br />
                 du tri dans vos <br />
                 placards ?</h1>
+                <h1 className="bannerTitleTwo">Prêts à faire 
+                du tri dans vos <br />
+                placards ?</h1>
                 <Link to="/a-propos">
                     <button className="bannerButton">
                         Vends maintenant

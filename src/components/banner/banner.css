@@ -28,6 +28,10 @@
     padding: 12px 0 53px 0;
 }
 
+.bannerTitleTwo {
+    display: none;
+}
+
 .bannerButton{
     width: 330px;
     height: 46px;
@@ -70,4 +74,74 @@
     .bannerSvg{
         margin: 131px 0 0 21rem;
     }
+}
+
+@media screen and (max-width: 425px) {
+    .bannerBackgroung {
+        background-size: contain;
+        height: 273px;
+    }
+    .bannerCard{
+        top: 16rem;
+        left: 18px;
+        width: 394px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bannerTitle {
+        display: none;
+    }
+
+    .bannerTitleTwo {
+        display: flex;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 12px 0 18px 0;
+        text-align: center;
+    }
+
+    .bannerButton {
+        width: 400px;
+    }
+
+    .bannerSvg {
+        margin: -6rem 0 0 -2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        padding-top: 5rem;
+    }
+
+    .bannerCard {
+        left: 28px;
+        width: 320px;
+    }
+
+    .bannerButton {
+        width: 352px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner {
+        padding-top: 4rem;
+    }
+
+    .bannerCard {
+        left: 0px;
+    }
+
+    .bannerButton {
+        width: 315px;
+    }
+
+    .bannerSvg {
+        margin: -7rem 0 0 -11rem;
+    }
+
 }
