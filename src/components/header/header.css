@@ -168,8 +168,8 @@
 }
 
 .headerSelectedLanguage{
-    width: 190px;
-    height: 32px;
+    width: 205px;
+    height: 53px;
     padding: 10px 12px 10px 12px;
     display: flex;
     cursor: pointer;
@@ -272,6 +272,7 @@
         background: white;
         width: 770px;
         height: 73rem;
+        z-index: 3;
     }
 
     .headerBurger{

@@ -1,0 +1,21 @@
+.footer {
+    border-top: 1px solid #ebebeb;
+    width: 88%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.footerContent{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    font-size: 12px;
+    
+}
+
+.footerContentElement{
+    color: #757575;
+    text-decoration: underline;
+    text-decoration-color: #757575;
+}

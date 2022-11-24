@@ -4,6 +4,7 @@ import { FaSortDown, FaSearch } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
 import NavBar from '../navbar/NavBar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [openItems, setOpenItems] = useState(false);
@@ -15,11 +16,13 @@ const Header = () => {
     <header className="header">
         <div className="headerWrapper">
             <div className="headerPicture">
-                <img 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Vinted_logo.png/1024px-Vinted_logo.png" 
-                    alt="logo du site" 
-                    className="headerLogo"
-                />
+                <Link to="/">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Vinted_logo.png/1024px-Vinted_logo.png" 
+                        alt="logo du site" 
+                        className="headerLogo"
+                    />
+                </Link>
                 <div className="headerSeparatorIcon"></div>
                 <div onClick={() => setOpenBurger(!openBurger)}>
                     {
@@ -30,9 +33,15 @@ const Header = () => {
                             </div> 
                             <div className="headerMenuScrolling">
                             <div className="headerButtons">
-                                <div className="headerButtonSell">Vends tes articles</div>
-                                <div className="headerAuthButton">S'inscrire | Se connecter</div>
-                                <div className="headerGuideButton">Ton guide Vinted</div>
+                                <Link to="/a-propos">
+                                    <div className="headerButtonSell">Vends tes articles</div>
+                                </Link>
+                                <Link to="/a-propos">
+                                    <div className="headerAuthButton">S'inscrire | Se connecter</div>
+                                </Link>
+                                <Link to="/a-propos">
+                                    <div className="headerGuideButton">Ton guide Vinted</div>
+                                </Link>
                             </div>
                             </div>
                         </>
