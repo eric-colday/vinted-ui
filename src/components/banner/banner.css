@@ -84,7 +84,7 @@
     .bannerCard{
         top: 16rem;
         left: 18px;
-        width: 394px;
+        height: unset;
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -97,9 +97,9 @@
 
     .bannerTitleTwo {
         display: flex;
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 400;
-        padding: 12px 0 18px 0;
+        padding: 6px 0 18px 0;
         text-align: center;
     }
 
@@ -108,7 +108,7 @@
     }
 
     .bannerSvg {
-        margin: -6rem 0 0 -2rem;
+        margin: 4rem 0 0 -8rem;
     }
 }
 
@@ -136,12 +136,16 @@
         left: 0px;
     }
 
+    .bannerTitleTwo {
+        font-size: 22px;
+    }
+
     .bannerButton {
-        width: 315px;
+        width: 300px;
     }
 
     .bannerSvg {
-        margin: -7rem 0 0 -11rem;
+        margin: 3rem 0 0 -11rem;
     }
 
 }

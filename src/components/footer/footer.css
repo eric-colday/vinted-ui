@@ -19,3 +19,14 @@
     text-decoration: underline;
     text-decoration-color: #757575;
 }
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        width: 95%;
+    }
+
+    .footerContent{
+        flex-wrap: wrap;
+        
+    }
+}

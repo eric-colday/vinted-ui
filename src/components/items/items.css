@@ -31,6 +31,10 @@
     gap: 13px;
 }
 
+.itemsArrows{
+    display: none;
+}
+
 .itemsCardInfos{
     padding: 8px;
 }
@@ -109,10 +113,74 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .itemsTitleDisplay {
+        width: 95%;
+    }
     .itemsCards {
-        width: 86%;
+        width: 95%;
         margin: auto;
         justify-content: flex-start;
         overflow: auto;
+    }
+
+    .itemsArrows{
+        display: flex;
+        justify-content: space-between;
+        width: 87%;
+        margin: auto;
+    }
+
+    .itemsArrow{
+        position: absolute;
+        top: 53rem;
+        background: #0000005c;
+        color: white;
+        width: 33px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 32px;
+    }
+
+    .itemArrowPositionRight{
+        left: 58rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .itemArrowPositionRight {
+        left: 43rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .itemsWrapper {
+        margin-top: 7rem;
+    }
+
+    .itemsArrow{
+        top: 47rem;
+    }
+
+    .itemArrowPositionRight {
+        left: 23rem;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .itemArrowPositionRight {
+        left: 20rem;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .itemsArrow {
+        top: 46rem;
+    }
+    
+    .itemArrowPositionRight {
+        left: 17rem;
     }
 }

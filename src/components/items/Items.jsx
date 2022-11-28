@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./items.css";
-import { FaRegHeart } from 'react-icons/fa';
+import { FaChevronLeft, FaChevronRight, FaRegHeart } from 'react-icons/fa';
 
 const Items = () => {
   return (
@@ -146,6 +146,14 @@ const Items = () => {
                         <span>Voir tous les articles</span>
                     </div>
                 </Link>
+            </div>
+            <div className="itemsArrows">
+                <div className="itemsArrow">
+                    <FaChevronLeft className="itemsIconArrowLeft"/>
+                </div>
+                <div className="itemsArrow itemArrowPositionRight">
+                    <FaChevronRight className="itemsIconArrowRight"/>
+                </div>
             </div>
         </div>
     </section>
