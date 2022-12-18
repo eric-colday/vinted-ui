@@ -44,6 +44,25 @@
     height: 388px;
 }
 
+.itemsCardcover{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.itemsCardProfile{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.itemsCardName{
+    font-size: 12Px;
+    font-weight: 300;
+    padding-left: 10px;
+    color: #757575;
+}
 
 .itemsCardImage{
     width: 200px;
@@ -63,7 +82,7 @@
     justify-content: center;
     width: 18px;
     height: 18px;
-    margin-left: -79px;
+    margin-left: -70px;
     border: 2px solid;
     border-radius: 8px;
     font-size: 12px;

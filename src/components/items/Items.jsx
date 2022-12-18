@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./items.css";
 import { FaChevronLeft, FaChevronRight, FaRegHeart } from 'react-icons/fa';
+import Data from "../../Data";
+
+const itemsList = Data;
 
 const Items = () => {
   return (
@@ -16,131 +19,44 @@ const Items = () => {
                 </Link>
             </div>
             <div className="itemsCards">
-                <div className="itemCard">
-                    <Link to="/">
-                        <img 
-                            src="https://tinyurl.com/2n5x29eh" 
-                            alt="Visuel article populaire" 
-                            className="itemsCardImage" 
-                        />
-                    </Link>
-                    <div className="itemsCardInfos">
-                        <div className="itemsCardPrice">
-                            <span>8,00 €</span>
-                            <span className="itemsCardInfo">i</span>
-                            <div className="itemsCardHeart">
-                                <FaRegHeart className="itemsCardIcon"/>
-                             <span className="itemsCardScrore">11</span>
+                {itemsList.map((item, index)=> 
+                    <div 
+                        key={index} 
+                        className="itemCard"
+                    >
+                        <Link to="/">
+                            <div className="itemsCardProfile">
+                                <img 
+                                    src={item.cover}
+                                    alt="Visuel article populaire" 
+                                    className="itemsCardcover" 
+                                />
+                                <h4 className="itemsCardName">{item.name}</h4>
+                            </div>
+                            <img 
+                                src={item.picture}
+                                alt="Visuel article populaire" 
+                                className="itemsCardImage" 
+                            />
+                        </Link>
+                        <div className="itemsCardInfos">
+                            <div className="itemsCardPrice">
+                                <span>{item.price} {item.currency}</span>
+                                <span className="itemsCardInfo">i</span>
+                                <div className="itemsCardHeart">
+                                    <FaRegHeart className="itemsCardIcon"/>
+                                <span className="itemsCardScrore">{item.like} </span>
+                                </div>
+                            </div>
+                            <div className="itemsCardDesc">
+                                <span className="itemsSize">
+                                    {item.size}
+                                </span>
+                                <h4 className="itemsCardSubtitle">{item.title}</h4>
                             </div>
                         </div>
-                        <div className="itemsCardDesc">
-                            <span className="itemsSize">
-                                L/40/12
-                            </span>
-                            <h4 className="itemsCardSubtitle">Springfield</h4>
-                        </div>
                     </div>
-                </div>
-                <div className="itemCard">
-                    <Link to="/">
-                        <img 
-                            src="https://tinyurl.com/2n5x29eh" 
-                            alt="Visuel article populaire" 
-                            className="itemsCardImage" 
-                        />
-                    </Link>
-                    <div className="itemsCardInfos">
-                        <div className="itemsCardPrice">
-                            <span>8,00 €</span>
-                            <span className="itemsCardInfo">i</span>
-                            <div className="itemsCardHeart">
-                                <FaRegHeart className="itemsCardIcon"/>
-                             <span className="itemsCardScrore">11</span>
-                            </div>
-                        </div>
-                        <div className="itemsCardDesc">
-                            <span className="itemsSize">
-                                L/40/12
-                            </span>
-                            <h4 className="itemsCardSubtitle">Springfield</h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="itemCard">
-                    <Link to="/">
-                        <img 
-                            src="https://tinyurl.com/2n5x29eh" 
-                            alt="Visuel article populaire" 
-                            className="itemsCardImage" 
-                        />
-                    </Link>
-                    <div className="itemsCardInfos">
-                        <div className="itemsCardPrice">
-                            <span>8,00 €</span>
-                            <span className="itemsCardInfo">i</span>
-                            <div className="itemsCardHeart">
-                                <FaRegHeart className="itemsCardIcon"/>
-                             <span className="itemsCardScrore">11</span>
-                            </div>
-                        </div>
-                        <div className="itemsCardDesc">
-                            <span className="itemsSize">
-                                L/40/12
-                            </span>
-                            <h4 className="itemsCardSubtitle">Springfield</h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="itemCard">
-                    <Link to="/">
-                        <img 
-                            src="https://tinyurl.com/2n5x29eh" 
-                            alt="Visuel article populaire" 
-                            className="itemsCardImage" 
-                        />
-                    </Link>
-                    <div className="itemsCardInfos">
-                        <div className="itemsCardPrice">
-                            <span>8,00 €</span>
-                            <span className="itemsCardInfo">i</span>
-                            <div className="itemsCardHeart">
-                                <FaRegHeart className="itemsCardIcon"/>
-                             <span className="itemsCardScrore">11</span>
-                            </div>
-                        </div>
-                        <div className="itemsCardDesc">
-                            <span className="itemsSize">
-                                L/40/12
-                            </span>
-                            <h4 className="itemsCardSubtitle">Springfield</h4>
-                        </div>
-                    </div>
-                </div>
-                <div className="itemCard">
-                    <Link to="/">
-                        <img 
-                            src="https://tinyurl.com/2n5x29eh" 
-                            alt="Visuel article populaire" 
-                            className="itemsCardImage" 
-                        />
-                    </Link>
-                    <div className="itemsCardInfos">
-                        <div className="itemsCardPrice">
-                            <span>8,00 €</span>
-                            <span className="itemsCardInfo">i</span>
-                            <div className="itemsCardHeart">
-                                <FaRegHeart className="itemsCardIcon"/>
-                             <span className="itemsCardScrore">11</span>
-                            </div>
-                        </div>
-                        <div className="itemsCardDesc">
-                            <span className="itemsSize">
-                                L/40/12
-                            </span>
-                            <h4 className="itemsCardSubtitle">Springfield</h4>
-                        </div>
-                    </div>
-                </div>
+                )}
                 <Link to="/">
                     <div className="itemCardBackground">
                         <span>Voir tous les articles</span>
